@@ -1,4 +1,4 @@
-package co.appbrewery.dicee;
+package maxeem.america.dicee;
 
 import android.os.Bundle;
 import io.flutter.app.FlutterActivity;
