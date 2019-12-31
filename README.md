@@ -1,7 +1,9 @@
-![App Brewery Banner](https://github.com/londonappbrewery/Images/blob/master/AppBreweryBanner.png)
 
+![Screenshot1](screenshots/dicee-screen-land.png)
 
-# Dicee 🎲
+![Screenshot1](screenshots/dicee-screen-port.png)
+
+# Dicee app
 
 ## Our Goal
 
