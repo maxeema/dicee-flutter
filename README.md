@@ -1,9 +1,11 @@
 
 ![Screenshot1](screenshots/dicee-screen-land.png)
 
-![Screenshot1](screenshots/dicee-screen-port.png)
+![Screenshot2](screenshots/dicee-screen-port.png)
 
 # Dicee app
+
+![Screencap](screenshots/Maxeem-Dicee.gif)
 
 ## Our Goal
 
