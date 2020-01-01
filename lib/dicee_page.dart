@@ -27,13 +27,13 @@ class DiceePage extends StatelessWidget {
               final children = [
                 Spacer(),
                 Expanded(
-                    child: delayOne ? SvgPicture.asset("images/dice${dicee1.value}.svg", color: Colors.transparent)
-                        : SvgPicture.asset("images/dice${dicee1.value}.svg", color: dicee1.color)
+                    child: SvgPicture.asset("images/dice${dicee1.value}.svg",
+                        color: delayOne ? Colors.transparent : dicee1.color)
                 ),
                 Spacer(),
                 Expanded(
-                    child: delayTwo ? SvgPicture.asset("images/dice${dicee2.value}.svg", color: Colors.transparent)
-                        : SvgPicture.asset("images/dice${dicee2.value}.svg", color: dicee2.color)
+                    child: SvgPicture.asset("images/dice${dicee2.value}.svg",
+                        color: delayTwo ? Colors.transparent : dicee2.color)
                 ),
                 Spacer(),
               ];
