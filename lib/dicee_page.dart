@@ -21,28 +21,30 @@ class DiceePage extends StatelessWidget {
   Widget build(BuildContext context) =>
       InkWell(
         onTap: delayOne || delayTwo ? null : shake,
-        child: StatefulBuilder(
-            builder: (context, StateSetter setState)  {
-              invalidate = () { setState((){}); };
-              final children = [
-                Spacer(),
-                Expanded(
-                    child: SvgPicture.asset("images/dice${dicee1.value}.svg",
-                        color: delayOne ? Colors.transparent : dicee1.color)
-                ),
-                Spacer(),
-                Expanded(
-                    child: SvgPicture.asset("images/dice${dicee2.value}.svg",
-                        color: delayTwo ? Colors.transparent : dicee2.color)
-                ),
-                Spacer(),
-              ];
-              return context.isLandscape ? Row(
-                children: children,
-              ) : Column(
-                children: children,
-              );
-            }
+        child: SafeArea(
+          child: StatefulBuilder(
+              builder: (context, StateSetter setState)  {
+                invalidate = () { setState((){}); };
+                final children = [
+                  Spacer(),
+                  Expanded(
+                      child: SvgPicture.asset("images/dice${dicee1.value}.svg",
+                          color: delayOne ? Colors.transparent : dicee1.color)
+                  ),
+                  Spacer(),
+                  Expanded(
+                      child: SvgPicture.asset("images/dice${dicee2.value}.svg",
+                          color: delayTwo ? Colors.transparent : dicee2.color)
+                  ),
+                  Spacer(),
+                ];
+                return context.isLandscape ? Row(
+                  children: children,
+                ) : Column(
+                  children: children,
+                );
+              }
+          ),
         ),
       );
 
